@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Don Rulo - Restaurante en Trujillo, Perú. Disfruta de nuestra carta digital y realiza tu pedido por WhatsApp.">
+    <title>Don Rulo - Restaurante en Trujillo, Perú</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Don Rulo</h1>
+                    <span class="tagline">Restaurante</span>
+                </div>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#carta" class="nav-link">Carta</a></li>
+                    <li><a href="#sedes" class="nav-link">Sedes</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Bienvenido a Don Rulo</h2>
+            <p class="hero-subtitle">La mejor experiencia gastronómica en Trujillo, Perú</p>
+            <p class="hero-description">Descubre nuestra carta digital con los mejores platos de la región</p>
+            <a href="#carta" class="btn btn-primary">Ver Carta Digital</a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-placeholder">
+                <span>🍽️</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carta Digital Section -->
+    <section id="carta" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Carta</h2>
+            <p class="section-subtitle">Precios de ejemplo - No son precios reales</p>
+            
+            <!-- Categorías -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="todos">Todos</button>
+                <button class="category-btn" data-category="entradas">Entradas</button>
+                <button class="category-btn" data-category="platos">Platos Principales</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+                <button class="category-btn" data-category="postres">Postres</button>
+            </div>
+
+            <!-- Grid de productos -->
+            <div class="menu-grid">
+                <!-- Entradas -->
+                <article class="menu-card" data-category="entradas">
+                    <div class="card-image">
+                        <div class="image-placeholder">🥗</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Ceviche Clásico</h3>
+                        <p class="card-description">Pescado fresco marinado en limón, cebolla, cilantro y ají limo</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 35.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Ceviche Clásico por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="entradas">
+                    <div class="card-image">
+                        <div class="image-placeholder">🥘</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Causa Limeña</h3>
+                        <p class="card-description">Papa amarilla prensada con pollo, palta y mayonesa casera</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 28.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Causa Limeña por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="entradas">
+                    <div class="card-image">
+                        <div class="image-placeholder">🌮</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Anticuchos</h3>
+                        <p class="card-description">Corazón de res marinado en ají panca y vinagre, servido con papa</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 32.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Anticuchos por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Platos Principales -->
+                <article class="menu-card" data-category="platos">
+                    <div class="card-image">
+                        <div class="image-placeholder">🍛</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Lomo Saltado</h3>
+                        <p class="card-description">Trozos de lomo fino salteados con cebolla, tomate, ají amarillo y papas fritas</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 45.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Lomo Saltado por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="platos">
+                    <div class="card-image">
+                        <div class="image-placeholder">🥩</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Ají de Gallina</h3>
+                        <p class="card-description">Gallina deshilachada en crema de ají amarillo, servido con arroz y papas</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 38.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Ají de Gallina por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="platos">
+                    <div class="card-image">
+                        <div class="image-placeholder">🍲</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Arroz con Pollo</h3>
+                        <p class="card-description">Arroz al ají panca con pollo guisado, acompañado de yuca frita</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 36.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Arroz con Pollo por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="platos">
+                    <div class="card-image">
+                        <div class="image-placeholder">🦐</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Jalea Mixta</h3>
+                        <p class="card-description">Pescado y mariscos fritos servidos con yuca y salsa criolla</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 52.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Jalea Mixta por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="platos">
+                    <div class="card-image">
+                        <div class="image-placeholder">🍗</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pollo a la Brasa</h3>
+                        <p class="card-description">Pollo entero marinado y asado a las brasas, servido con papas y ensalada</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 48.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Pollo a la Brasa por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bebidas -->
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-image">
+                        <div class="image-placeholder">🥤</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Chicha Morada</h3>
+                        <p class="card-description">Bebida tradicional de maíz morado con piña y canela</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 8.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Chicha Morada por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-image">
+                        <div class="image-placeholder">🍹</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Limonada Natural</h3>
+                        <p class="card-description">Jugo de limón natural con azúcar y hielo</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 7.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Limonada Natural por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-image">
+                        <div class="image-placeholder">🧃</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Maracuyá Sour</h3>
+                        <p class="card-description">Cóctel de maracuyá con pisco, limón y clara de huevo</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 25.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Maracuyá Sour por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Postres -->
+                <article class="menu-card" data-category="postres">
+                    <div class="card-image">
+                        <div class="image-placeholder">🍮</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Suspiro a la Limeña</h3>
+                        <p class="card-description">Dulce de leche cubierto con merengue al oporto y canela</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 15.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Suspiro a la Limeña por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="postres">
+                    <div class="card-image">
+                        <div class="image-placeholder">🍨</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Lucuma Ice Cream</h3>
+                        <p class="card-description">Helado de lúcuma artesanal con salsa de chocolate</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 18.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Lucuma Ice Cream por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="postres">
+                    <div class="card-image">
+                        <div class="image-placeholder">🥧</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tres Leches</h3>
+                        <p class="card-description">Bizcocho bañado en tres tipos de leche con merengue</p>
+                        <div class="card-footer">
+                            <span class="price">S/ 16.00 <small>(ejemplo)</small></span>
+                            <button class="btn-order" aria-label="Pedir Tres Leches por WhatsApp">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/51900000000?text=Hola,%20me%20gustaría%20hacer%20un%20pedido" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <span class="whatsapp-icon">💬</span>
+        <span class="whatsapp-text">Pedir por WhatsApp</span>
+    </a>
+
+    <!-- Sedes Section -->
+    <section id="sedes" class="locations-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Sedes</h2>
+            <p class="section-subtitle">Información de contacto - Datos de ejemplo</p>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">📍</div>
+                    <h3 class="location-title">Sede Central</h3>
+                    <p class="location-address">Dirección de ejemplo - Centro de Trujillo</p>
+                    <p class="location-phone">Teléfono: +51 900 000 000 (ejemplo)</p>
+                    <p class="location-hours">Horario: Lun - Dom: 11:00 AM - 10:00 PM</p>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">📍</div>
+                    <h3 class="location-title">Sede Norte</h3>
+                    <p class="location-address">Dirección de ejemplo - Zona Norte de Trujillo</p>
+                    <p class="location-phone">Teléfono: +51 900 000 001 (ejemplo)</p>
+                    <p class="location-hours">Horario: Lun - Dom: 12:00 PM - 9:00 PM</p>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">📍</div>
+                    <h3 class="location-title">Sede Este</h3>
+                    <p class="location-address">Dirección de ejemplo - Zona Este de Trujillo</p>
+                    <p class="location-phone">Teléfono: +51 900 000 002 (ejemplo)</p>
+                    <p class="location-hours">Horario: Lun - Sáb: 11:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <h4>Email</h4>
+                        <p>contacto@donrulo-ejemplo.com (ejemplo)</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+51 900 000 000 (ejemplo)</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🌐</span>
+                    <div>
+                        <h4>Redes Sociales</h4>
+                        <p>@donrulo_ejemplo (cuentas demostrativas)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Don Rulo</h3>
+                    <p>La mejor experiencia gastronómica en Trujillo, Perú</p>
+                    <p class="footer-note">Este es un prototipo de rediseño - No es el sitio oficial</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#carta">Carta Digital</a></li>
+                        <li><a href="#sedes">Sedes</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Don Rulo - Prototipo de Rediseño. Todos los derechos reservados.</p>
+                <p class="disclaimer">Los precios, direcciones y teléfonos mostrados son datos de ejemplo para fines demostrativos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
